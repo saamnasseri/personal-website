@@ -1,0 +1,123 @@
+html, body{
+    background-color: black;
+    scroll-behavior: smooth;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    min-width: 350px;
+    height: 100%;
+    min-height: 100%;
+}
+.summary-text{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+    margin: 2vh 0 6vh;
+    word-wrap:break-word;
+    display: block;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-width: 60vh;
+    padding: 0 16vw;
+    position: absolute;
+
+}
+
+@media screen {
+    
+}
+.main-icon{
+    height: 4vh;
+    position: fixed  ;
+    display: flex;
+    bottom: 20px;
+    padding-inline-start: 1vh;
+}
+#first{
+    margin-bottom: 6vh;
+}
+.root{
+    background:  black;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.hometown{
+    color: grey;
+    font-size: 2vh;
+    bottom: 24px;
+    position: relative;
+    right: 5vh;
+}
+.sidenav{
+    height: 100%;
+    width: 18vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    /* stratocaster orange */
+    background-color: #e82b19;
+    
+}
+.menutext{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    overflow: visible;
+    list-style-type: none;
+    position: fixed;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5vh;
+    
+}
+.points{
+    padding-bottom: 6vh;
+    margin-right: 3vh;
+    position: relative;
+    z-index: none;
+    justify-content: center;
+}
+
+a, buttton{
+    color: white;
+    
+}
+a:hover, button:hover{
+    -webkit-animation: rainbow 6s ease infinite;
+    animation: rainbow 6s ease infinite;
+    background: -webkit-linear-gradient(0deg, #2b1de8, #1ddde8, #4DF0BF,lime, white, lavender, hotpink, aqua, #2b1de8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 900% 900%;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+@keyframes  rainbow{
+
+
+0% {
+    background-position: 0 82%;
+}
+50% {
+    background-position: 100% 19%;
+}
+100% {
+    background-position: 0 82%;
+}
+}
+ul{
+    padding-inline-start: 4vh;
+    
+}
